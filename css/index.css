@@ -4,5 +4,35 @@ body {
   color: #111;
 }
 .story {
-  padding: 0 1em;
+  padding: 0 1em 0 1em;
+}
+
+
+.heading {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  background-color: #f1f1f1;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0;
+  text-align: center;
+}
+
+/* progress bar container background*/
+
+.progress-bar-container {
+  width: 100%;
+  height: 0.5em;
+  background: grey;
+  margin: auto;
+}
+
+/* scroll indicator   */
+.progress-bar {
+  height: 0.5em;
+  background: lightskyblue;
+  width: 0%;
+
 }
