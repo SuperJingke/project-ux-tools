@@ -90,6 +90,29 @@ body {
 }
 
 
+/* elevator */
+#myElevator a{
+  position: fixed;
+  right: -8em;
+  transition: .2s;
+  padding: 15px;
+  width: 10em;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1em;
+  color: #dddddd;
+  border-radius: 5em 0 5em 5em;
+}
+
+#myElevator a:hover {
+  right: 0;
+}
+#back {
+  top: 25em;
+  background-color:grey;
+}
+
+
 @media (max-width: 600px){
   .nav {
     overflow: auto;
