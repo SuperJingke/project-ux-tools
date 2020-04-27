@@ -9,17 +9,18 @@
   </head>
   <body>
     <main class="story">
-      <header class="heading">
-        <div class="progress-bar-container">
+      <header>
+        <div class="heading progress-bar-container">
           <div class="progress-bar" id="progress"></div>
         </div>
-        <h1>Javascript and the UI</h1>
+        <h1 class="nav-title">Javascript and the UI</h1>
         <nav>
-          <ul>
-            <li><a href="#javascript">Javascript Intro</a></li>
-            <li><a href="#window">The Browser Window</a></li>
-            <li><a href="#document">Document Object Model</a></li>
-            <li><a href="#element">Document Elements</a></li>
+          <ul class="nav">
+            <li id="myList"><a href="#javascript">Javascript Intro</a></li>
+            <li id="myList"><a href="#window">The Browser Window</a></li>
+            <li id="myList"><a href="#document">Document Object Model</a></li>
+            <li id="myList"><a href="#element">Document Elements</a></li>
+            <span class="nav-indicator"></span>
           </ul>
         </nav>
       </header>
@@ -29,7 +30,7 @@
           <p>JavaScript (/ˈdʒɑːvəˌskrɪpt/),[9] often abbreviated as JS, is a high-level, just-in-time compiled, multi-paradigm programming language that conforms to the ECMAScript specification.[10] JavaScript has curly-bracket syntax, dynamic typing, prototype-based object-orientation, and first-class functions.</p>
           <p>Alongside HTML and CSS, JavaScript is one of the core technologies of the World Wide Web.[11] JavaScript enables interactive web pages and is an essential part of web applications. The vast majority of websites use it,[12] and major web browsers have a dedicated JavaScript engine to execute it.</p>
           <p>As a multi-paradigm language, JavaScript supports event-driven, functional, and imperative (including object-oriented and prototype-based) programming styles. It has APIs for working with text, arrays, dates, regular expressions, and the DOM, but the language itself does not include any I/O, such as networking, storage, or graphics facilities. It relies upon the host environment in which it is embedded to provide these features.</p>
-          <div><img src="https://via.placeholder.com/1600x900" alt="An example placeholder image"></div>
+          <div><img src="https://via.placeholder.com/1600x900/000000/FFFFFF/?text=More+detail+go+to+IPaddress.net" alt="An example placeholder image"></div>
           <p>Initially only implemented client-side in web browsers, JavaScript engines are now embedded in many other types of host software, including server-side in web servers and databases, and in non-web programs such as word processors and PDF software, and in runtime environments that make JavaScript available for writing mobile and desktop applications, including desktop widgets.</p>
           <p>The terms Vanilla JavaScript and Vanilla JS refer to JavaScript not extended by any frameworks or additional libraries. Scripts written in Vanilla JS are plain JavaScript code.[13][14]</p>
           <p>Although there are similarities between JavaScript and Java, including language name, syntax, and respective standard libraries, the two languages are distinct and differ greatly in design. JavaScript was influenced by programming languages such as Self and Scheme.[15] The JSON serialization format, used to store data structures in files or transmit them across networks, is based on JavaScript.[16]</p>
@@ -40,7 +41,7 @@
           <p>The Window interface represents a window containing a DOM document; the document property points to the DOM document loaded in that window. A window for a given document can be obtained using the document.defaultView property.</p>
           <p>A global variable, window, representing the window in which the script is running, is exposed to JavaScript code.</p>
           <p>The Window interface is home to a variety of functions, namespaces, objects, and constructors which are not necessarily directly associated with the concept of a user interface window. However, the Window interface is a suitable place to include these items that need to be globally available. Many of these are documented in the JavaScript Reference and the DOM Reference.</p>
-          <div><img src="https://via.placeholder.com/1600x900" alt="An example placeholder image"></div>
+          <div><img src="https://via.placeholder.com/1600x900/000000/FFFFFF/?text=More+detail+go+to+IPaddress.net" alt="An example placeholder image"></div>
           <p>In a tabbed browser, each tab is represented by its own Window object; the global window seen by JavaScript code running within a given tab always represents the tab in which the code is running. That said, even in a tabbed browser, some properties and methods still apply to the overall window that contains the tab, such as resizeTo() and innerHeight. Generally, anything that can't reasonably pertain to a tab pertains to the window instead.</p>
           <footer><p>Information copied from <cite><a href="https://developer.mozilla.org/en-US/docs/Web/API/window">MDN's entry on the Window object</a></cite></p></footer>
         </section>
@@ -48,10 +49,10 @@
           <h2>Document Object Model</h2>
           <p>The Document Object Model (DOM) is a cross-platform and language-independent interface that treats an XML or HTML document as a tree structure wherein each node is an object representing a part of the document. The DOM represents a document with a logical tree. Each branch of the tree ends in a node, and each node contains objects. DOM methods allow programmatic access to the tree; with them one can change the structure, style or content of a document. Nodes can have event handlers attached to them. Once an event is triggered, the event handlers get executed.[2]</p>
           <p>The principal standardization of the DOM was handled by the World Wide Web Consortium, which last developed a recommendation in 2004. WHATWG took over development of the standard, publishing it as a living document. The W3C now publishes stable snapshots of the WHATWG standard.</p>
-          <div><img src="https://via.placeholder.com/1600x900" alt="An example placeholder image"></div>
+          <div><img src="https://via.placeholder.com/1600x900/000000/FFFFFF/?text=More+detail+go+to+IPaddress.net" alt="An example placeholder image"></div>
           <p>The history of the Document Object Model is intertwined with the history of the "browser wars" of the late 1990s between Netscape Navigator and Microsoft Internet Explorer, as well as with that of JavaScript and JScript, the first scripting languages to be widely implemented in the JavaScript engines of web browsers.</p>
           <p>JavaScript was released by Netscape Communications in 1995 within Netscape Navigator 2.0. Netscape's competitor, Microsoft, released Internet Explorer 3.0 the following year with a reimplementation of JavaScript called JScript. JavaScript and JScript let web developers create web pages with client-side interactivity. The limited facilities for detecting user-generated events and modifying the HTML document in the first generation of these languages eventually became known as "DOM Level 0" or "Legacy DOM." No independent standard was developed for DOM Level 0, but it was partly described in the specifications for HTML 4.</p>
-          <div><img src="https://via.placeholder.com/1600x900" alt="An example placeholder image"></div>
+          <div><img src="https://via.placeholder.com/1600x900/000000/FFFFFF/?text=More+detail+go+to+IPaddress.net" alt="An example placeholder image"></div>
           <p>Legacy DOM was limited in the kinds of elements that could be accessed. Form, link and image elements could be referenced with a hierarchical name that began with the root document object. A hierarchical name could make use of either the names or the sequential index of the traversed elements. For example, a form input element could be accessed as either document.formName.inputName or document.forms[0].elements[0].</p>
           <p>The Legacy DOM enabled client-side form validation and the popular "rollover" effect.</p>
           <p>In 1997, Netscape and Microsoft released version 4.0 of Netscape Navigator and Internet Explorer respectively, adding support for Dynamic HTML (DHTML) functionality enabling changes to a loaded HTML document. DHTML required extensions to the rudimentary document object that was available in the Legacy DOM implementations. Although the Legacy DOM implementations were largely compatible since JScript was based on JavaScript, the DHTML DOM extensions were developed in parallel by each browser maker and remained incompatible. These versions of the DOM became known as the "Intermediate DOM."</p>
@@ -61,7 +62,7 @@
         <section id="element">
           <h2>Document Elements</h2>
           <p>Element is the most general base class from which all element objects (i.e. objects that represent elements) in a Document inherit. It only has methods and properties common to all kinds of elements. More specific classes inherit from Element. For example, the HTMLElement interface is the base interface for HTML elements, while the SVGElement interface is the basis for all SVG elements. Most functionality is specified further down the class hierarchy.</p>
-          <div><img src="https://via.placeholder.com/1600x900" alt="An example placeholder image"></div>
+          <div><img src="https://via.placeholder.com/1600x900/000000/FFFFFF/?text=More+detail+go+to+IPaddress.net" alt="An example placeholder image"></div>
           <p>Languages outside the realm of the Web platform, like XUL through the XULElement interface, also implement Element.</p>
           <footer><p>Information copied from <cite><a href="https://developer.mozilla.org/en-US/docs/Web/API/Element">MDN's entry on the Element type</a></cite></p></footer>
         </section>
