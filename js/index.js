@@ -5,7 +5,7 @@ window.onscroll = function() {myIndicator()};
 function myIndicator(){
     var winScroll = document.documentElement.scrollTop;
     var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-    var scrolled = (winScroll / height) * 100
+    var scrolled = (winScroll / height) * 100;
     document.getElementById("progress").style.width = scrolled + "%";
 }
 
@@ -15,6 +15,27 @@ function myIndicator(){
 function myFunction(){
     document.getElementById("myList").className = "nav-item";
 }
+
+// //make the sticky nav bar
+// //Execute myFunction
+
+
+// var navbar = document.getElementsById("navbar");
+
+// //Get the offset position of the navbar
+// var sticky = navbar.offsetTop;
+
+// // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+// function myFunction(){
+//     if (window.pageXOffset >= sticky){
+//         navbar.classList.add("sticky-top")
+//     } else {
+//         navbar.classList.remove("sticky-top")
+//     }
+
+
+
+
 
 
 //create an infiniteContent function 
