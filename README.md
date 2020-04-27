@@ -1,5 +1,5 @@
 # PROJECT: UX TOOLING
-
+Made by Jingke Liang and Fabio Goncalves
 
 ## References
 1. To create the scroll indicator:
@@ -10,5 +10,6 @@ https://www.wiseoldsayings.com/javascript-quotes/
 
 3. Make sure the progress bar moves at a steady rate
 https://stackoverflow.com/questions/25395336/how-to-make-a-progress-bar-using-html-and-javascript
+
 
 
