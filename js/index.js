@@ -1,4 +1,5 @@
-//scroll indicator
+
+ //scroll indicator
 window.onscroll = function() {myIndicator()};
 
 function myIndicator(){
@@ -13,30 +14,43 @@ function myIndicator(){
 document.querySelectorAll('myList') = ".nav-item";
 
 
-// const indicator = document.querySelector('.nav-indicator');
-// const items = document,querySelectorAll('nav-item');
+//create an infiniteContent function 
 
-// function handleIndicator(tag) {
-//     items.forEach(item =>{
-//         item.classlist.remove('is-active');
-//         item.removeAttribute('style');
-//     });
-//     indicator.style.width = `${tag.offsetWidth}px`;
-//     indicator.style.left = `${tag.setLeft}px`;
-//     indicator.style.backgroundColor = tag.getAttribute('active-color');
+const infiniteContent = ()=> {
 
-//     tag.classlist.add(`is-active`);
-//     tag.style.color = tag.getAttribute('active-color');
+    // find the section with the ID of element
+    const $element = document.querySelector('#element')
 
-// }
+    if ($element.getBoundingClientRect().top < window.innerHeight) {
+    
+        //create an H2 heading
+        const $createHeading = document.createElement('H2');
 
-// items.forEach((item, index)=>{
-//     item.addEventListener('click',tab => {
-//         handleIndicator(tab.target);});
-//         item.classlist.contains('is-active') && handleIndicator(item);
-//     });
+        //Add text to the H2 heading
+        $createHeading.textContent = 'More content coming soon!';
 
+        //create the h2 as a child of the $element section
+        $element.appendChild($createHeading);
+    
+		//create a new paragraph
+		const $createParagraph = document.createElement('p');
 
+		//add text to the paragraph
+		$createParagraph.textContent = 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur, quos impedit fugit velit magni quidem, qui molestiae, aliquam sequi nobis repellat null doloremque';
 
+		//create the paragraph as a child of the $element section
+        $element.appendChild($createParagraph);
 
+        //create a new img element
+        const $createImage =document.createElement('img');
+        
+        //add an image to that img element
+        $createImage.setAttribute('src','https://via.placeholder.com/1600x900');
 
+        //create the img as a child of the $element section
+        $element.appendChild($createImage)
+}
+}
+ 
+//run the event
+window.addEventListener('scroll', infiniteContent)
