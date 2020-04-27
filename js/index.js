@@ -69,7 +69,7 @@ const infiniteContent = () => {
         const $createImage =document.createElement('img');
         
         //add an image to that img element
-        $createImage.setAttribute('src','https://via.placeholder.com/1600x900');
+        $createImage.setAttribute('src','https://via.placeholder.com/1600x900/000000/FFFFFF/?text=More+content+coming+soon');
 
         //create the img as a child of the $element section
         $element.appendChild($createImage)
