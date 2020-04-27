@@ -11,15 +11,18 @@ function myIndicator(){
 
 
 // navigation bar
-document.querySelectorAll('myList') = ".nav-item";
+
+function myFunction(){
+    document.getElementById("myList").className = "nav-item";
+}
 
 
 //create an infiniteContent function 
 
-const infiniteContent = ()=> {
+const infiniteContent = () => {
 
     // find the section with the ID of element
-    const $element = document.querySelector('#element')
+    const $element = document.querySelector('#element');
 
     if ($element.getBoundingClientRect().top < window.innerHeight) {
     
@@ -49,7 +52,7 @@ const infiniteContent = ()=> {
 
         //create the img as a child of the $element section
         $element.appendChild($createImage)
-}
+    }
 }
  
 //run the event
