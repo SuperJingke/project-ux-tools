@@ -92,3 +92,9 @@ Also be sure to include:
 - All student names at the top of the `README.md` file, with links to their Github profile
 - Cite all resources used (not including original content written and distributed by your instructors)
 - As it may not be clear, write a short and clear list of "things to test" for your instructors to ensure they know exactly where to look for each solution while grading the UI
+
+
+## References
+1. To create the scroll indicator:
+https://www.w3schools.com/howto/howto_js_scroll_indicator.asp
+
