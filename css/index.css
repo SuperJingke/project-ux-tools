@@ -4,5 +4,73 @@ body {
   color: #111;
 }
 .story {
-  padding: 0 1em;
+  padding: 0 1em 0 1em;
+}
+
+
+/* progress bar container background*/
+
+.progress-bar-container {
+  width: 100%;
+  height: 0.5em;
+  background: grey;
+  margin: auto;
+}
+
+/* scroll indicator   */
+.progress-bar {
+  height: 0.5em;
+  background: lightskyblue;
+  width: 0%;
+
+}
+.heading {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  background-color: grey;
+  margin-left: auto;
+  text-align: center;
+}
+/* Navigation bar  */
+.nav-title {
+  text-align: center;
+}
+
+.nav{
+  display: flex;
+  background-color: cornflowerblue;
+  overflow: hidden;
+  border-radius: 3em;
+  text-align: center;
+  justify-content: space-around;
+  margin: 0;
+}
+
+.nav-item {
+  color: purple;
+  padding: 0.2em;
+  text-decoration: none;
+  transition: .2s;
+  margin: 0.5em;
+  position: fixed;
+  column-gap: normal;
+  justify-content: center;
+}
+
+
+
+.nav-indicator {
+  position: fixed;
+  border-radius: 2em 2em 0 0;
+
+
+}
+
+@media (max-width: 600px){
+  .nav {
+    overflow: auto;
+  }
 }
