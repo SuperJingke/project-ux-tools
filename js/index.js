@@ -27,7 +27,7 @@ function myFunction(){
 //make the navigation menu fixed
 
 window.addEventListener('scroll', event => {
-    // As an example, check if you've passed a certain point...
+    
     if (window.scrollY > 0) {
       document.querySelector('.nav').style.position = 'fixed'
     }
