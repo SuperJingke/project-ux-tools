@@ -49,7 +49,10 @@ body {
   justify-content: space-around;
   margin: 0;
   padding: 0.1em 0.5em 0.1em 0.5em;
-
+  top:1%;
+  left: 0%;
+  width: 100%;
+  position: fixed;
 }
 
 .nav a {
